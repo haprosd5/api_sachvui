@@ -23,7 +23,7 @@ Use App\Categories;
 Route::get('cate', 'CategoriesController@getAllCategories');
 Route::get('cate/id/{cate_id}/', 'CategoriesController@getCateId');
 Route::get('cate/name/{title}/', 'CategoriesController@getCateName');
-Route::get('cate/id/{cate_id}/allStories', 'CategoriesController@getAllStoriesWithCateId');
+Route::get('cate/{cate_id}/all_stories', 'CategoriesController@getAllStoriesWithCateId');
 
 /** route truyện */
 Route::get('story', 'StoriesController@getAllStories');
